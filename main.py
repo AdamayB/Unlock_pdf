@@ -1,7 +1,7 @@
 import pikepdf
 path="" #enter path
 def removePass(a,b,password):
-    removePass = pikepdf.open(a, password)
+    removePass = pikepdf.open(a, password=password)
     removePass.save(b)
     print('Unlocked')
 # a= the original file name
